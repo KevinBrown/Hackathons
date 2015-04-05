@@ -1,0 +1,39 @@
+from pyechonest import config
+from pyechonest import song
+
+import sqlite3
+from os import walk
+
+import MetadataManipulation
+
+config.ECHO_NEST_API_KEY = "EZTRYZBZU8BTT2PK2"
+
+
+class PlaylistQuery():
+
+	def getEchonestSongData ( src, name, artist ):
+		lookup = song.
+
+
+	def scanPlaylistDirectory( src, filePath ):
+		songData = MetadataManipulation()
+		
+
+		for root, dirs, songFiles in walk( filePath ) :
+			for songfName in songFiles:
+				songData.setFilePath( root + song )
+				songData.loadMp3DataObject()
+
+				artist = songData.getArtist()
+				songName = songData.getSong()
+
+				
+				
+
+
+test = PlaylistQuery()
+test.scanPlaylistDirectory( "/home/kbrown/Music/" )
+
+
+
+

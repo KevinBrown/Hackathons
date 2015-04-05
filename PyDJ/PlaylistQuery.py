@@ -17,17 +17,21 @@ class PlaylistQuery():
 		if not res:
 			raise Exception( "SongNotFound" )
 
-		
+		summary = res.get_audio_summary()
+				
 
 	def calculateEnergyQuotient ( src, maxEnergy, maxLive, maxDance, maxAcoutics, maxTempo ) :
 		return (maxTempo / 150 ) * ( ( maxEnergy + maxLive + maxDance ) / ( maxAcoustics * 3 ) )
 
 
 	def scanPlaylistDirectory( src, filePath ):
+		song = 
+	
 		for root, dirs, songFiles in walk( filePath ) :
 			for song in songFiles:
 				#get metadata
 				print song
+				src.getEchonestSongData()
 
 
 test = PlaylistQuery()
