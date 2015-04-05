@@ -21,7 +21,29 @@ class PlaylistQuery():
 				
 
 	def calculateEnergyQuotient ( src, maxEnergy, maxLive, maxDance, maxAcoutics, maxTempo ) :
-		return (maxTempo / 150 ) * ( ( maxEnergy + maxLive + maxDance ) / ( maxAcoustics * 3 ) )
+		return   ( maxEnergy + maxLive + maxDance ) / ( maxAcoustics * 3 ) 
+
+	def defineSets ()
+
+		bangerOffset = i = int(setDuration/12)
+		while i < 0:
+			createNewSet
+			add songs[i] 
+
+		while numberOfMediumSongsLeft > 0:
+			for eachSet :
+				for eachMediumSong :
+					temp = songs[bangerOffset + 1]
+					if maxTempo*maxLive_banger - maxTempo*maxLive_newlistSong < maxTempo*maxLive_banger - maxTempo*maxLive_savedListSong :
+						temp = newlistSong
+				end
+				add tempSong to set
+				
+		for j = endIndex-bangerOffset set = i
+			add song[j] to set[i]
+			j+=1
+			i+=1
+
 
 
 	def scanPlaylistDirectory( src, filePath ):
