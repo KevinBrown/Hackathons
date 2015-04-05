@@ -1,9 +1,13 @@
-Main
-import Tkinter 
 
-print Automatic Dj!
-print --------------------------------
-print This application accepts a folder of mp3 tracks (at 44.1kHz) and returns a single audio file; mixed and rearanged for maximum Partying!
-print -------------------------------
-print please link your folder...
+from Tkinter import *
 
+root = Tk()
+
+def printname(event):
+    print("chello mate")
+
+button_1 = Button(root, text="click hur", command=printname)
+button_1.bind("<Button-1>", printname)
+button_1.pack()
+
+root.mainloop()
