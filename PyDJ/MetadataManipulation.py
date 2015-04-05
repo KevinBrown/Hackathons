@@ -4,7 +4,8 @@ class MetadataManipulation:
 	filePath = ""
 
 
-#	def __init__(self, path ) :
+	def __init__(self ) :
+		return None
 #		if ( not path ) :
 #			self.setPath( path )
 
@@ -27,5 +28,4 @@ class MetadataManipulation:
 		return self.dataObj.tag.album
 
 	def getSong(self):
-		return self.dataObj.tag.song
-
+		return self.dataObj.tag.title
