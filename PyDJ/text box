@@ -1,17 +1,29 @@
 
 from Tkinter import *
+import PlaylistQuery
+
 
 root = Tk()
 
-##
+def importMP3 (event):
+    scanPlaylistDirectory(src,input)
+    
+
+
+
+label1 = Label(root, text="Welcome to AutoMatic Dj!" )
 label2= Label(root, text="Enter the path to your folder:")
-entry1 = Entry(root)
+entry1 = entrytext(root)
+label3 = Label(root, text="your new mixed file will be in the same folder ")
+label4 = Label(root, text="that your audio came from")
+c = Button(root,text="Click to Mix!")
 
-label2.grid(row=0)
-entry1.grid(row=0,column=1)
+label1.grid(columnspan=2)
+label2.grid(row=2)
+entry1.grid(row=2,column=1)
 
-c = Checkbutton(root,text="check to be lame")
 c.grid(columnspan=2)
-##
+label3.grid(columnspan=2)
+label4.grid(columnspan=2)
 
 root.mainloop()
