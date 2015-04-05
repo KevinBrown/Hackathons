@@ -16,7 +16,7 @@ label2= Label(root, text="Enter the path to your folder:")
 entry1 = entrytext(root)
 label3 = Label(root, text="your new mixed file will be in the same folder ")
 label4 = Label(root, text="that your audio came from")
-c = Button(root,text="Click to Mix!")
+c = Button(root,text="Click to Mix!", importMP3)
 
 label1.grid(columnspan=2)
 label2.grid(row=2)
