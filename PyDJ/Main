@@ -1,0 +1,9 @@
+Main
+import Tkinter 
+
+print Automatic Dj!
+print --------------------------------
+print This application accepts a folder of mp3 tracks (at 44.1kHz) and returns a single audio file; mixed and rearanged for maximum Partying!
+print -------------------------------
+print please link your folder...
+
